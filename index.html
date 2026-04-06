@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#96D4D4">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stor UFL</title>
+</head>
+<style>
+
+.table1 th:nth-child(6),
+.table1 td:nth-child(6) {
+    width: 38%;
+}
+
+.table1 {
+    width: 500px;
+}    
+
+.table2 {
+    width: 400px;
+}
+
+    /* Default (laptop / skrin besar) */
+h1 {
+    font-size: 28px;
+}
+
+table {
+    width: 500px;
+}
+
+/* 📱 Bila buka di phone */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 18px;
+    }
+
+    table {
+        width: 95%;   /* penuh ikut skrin phone */
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    img {
+        width: 25px;  /* kecilkan icon */
+    }
+}
+    
+    body {
+        text-align: center;
+    }
+    
+    table {
+        width: 500px;
+        margin: auto;
+        table-layout: fixed;   /* TAMBAH SINI */
+        margin-bottom: 30px;   /* optional: jarak antara table */
+    }
+    
+    table, th, td {
+        border: 3px solid white;
+        border-collapse: collapse;
+}
+th, td {
+    background-color: #96D4D4;
+    text-align: center;
+    padding: 3px;
+    width: 20%;
+}
+
+
+</style>    
+<body>
+
+<!-- ========= TABLE PERETAMA ============== -->    
+<h1>Status Inden Kk</h1> 
+<table class="table1"> <!-- table pertama -->
+    <tr>
+        <th>KLINIK</th>
+        <th>ISSUE NO</th>
+        <th>INDEN NO</th>
+        <th>JUMLAH ITEM</th>
+        <th>STATUS</th>
+        <th>DESCRIPTION</th>
+      </tr>
+
+    <tr>
+        <td>Pasir Puteh</td>
+        <td>279</td>
+        <td>7639</td>
+        <td>28</td>
+        <td>Siap</td>
+        <td>Drug</td>
+        
+    </tr>
+
+    <tr>
+        <td>Pasir Puteh</td>
+        <td>280</td>
+        <td>6738</td>
+        <td>1</td>
+        <td>Siap</td>
+        <td>Botol Internal</td>
+        
+    </tr>
+    
+    <tr>
+        <td>Cherang Ruku</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+
+    <tr>
+        <td>Pdg Pak Amat</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Dlm Proses</td>
+        <td>-</td>
+    </tr>
+
+    <tr>
+        <td>Gaal</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+
+    <tr>
+        <td>Banggol Pak Esah</td>
+        <td>345</td>
+        <td>7612</td>
+        <td>7</td>
+        <td>Siap</td>
+        <td>Non Drug</td>
+    </tr>
+
+    <tr>
+        <td>Jeram</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>    
+
+    </tr>
+
+    <tr>
+        <td>KD Bkt Merbau</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        
+    </tr>
+</table>
+
+<h1>
+<img src="images/fridge.png" width="70">
+    Item Sejuk
+</h1>
+
+<!-- ========= TABLE KEDUA =========== -->
+
+<table class="table2">  <!-- table kedua -->
+    <tr>
+        <th>KLINIK</th>
+        <th>ITEM</th>
+        <th>JUMLAH</th>
+    </tr>
+
+    <tr>
+        <td>Pasir Putih</td>
+        <td>Mdi Foster</td>
+        <td>10 x can</td>
+    </tr>
+    
+    <tr>
+        <td>Cherang Ruku</td>  
+        <td>-</td>
+        <td>-</td>       
+    </tr>
+
+    <tr>
+        <td>Pdg Pak Amat</td>
+        <td>-</td>
+        <td>-</td>
+</tr>
+    
+    <tr>
+        <td>Gaal</td>   
+        <td>-</td>
+        <td>-</td>      
+    </tr>
+
+    <tr>
+        <td>Banggol Pak Esah</td>
+        <td>Novomix</td>
+        <td>5 x kotak</td>
+            
+    </tr>
+    
+    <tr>
+        <td>Jeram</td>  
+        <td>-</td>
+        <td>-</td>       
+    </tr>
+
+    <tr>
+        <td>KD Bkt Merbau</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    
+
+    
+</table>
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+    .then(function() {
+        console.log('Service Worker Registered');
+    });
+}
+</script>
+
+</body>
+</html>

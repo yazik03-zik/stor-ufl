@@ -1,0 +1,20 @@
+{
+  "name": "Stor UFL",
+  "short_name": "UFL",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#96D4D4",
+  "icons": [
+    {
+      "src": "images/fridge.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/fridge.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
