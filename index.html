@@ -9,7 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stor UFL</title>
 </head>
+<body>    
+
 <style>
+
+.tajuk-status {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tajuk-status h3,
+.tajuk-status span {
+    margin: 0;
+} 
+
+.kemaskini { /* Tarikh Kemaskini */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.tarikh {
+    background-color: #ffeb3b;  /* warna kuning */
+    padding: 4px 10px;
+    border-radius: 6px;  /* bucu bulat */
+    font-weight: bold;
+    display: inline-block;
+}
 
 .table1 th:nth-child(6),
 .table1 td:nth-child(6) {
@@ -35,6 +69,18 @@ table {
 
 /* 📱 Bila buka di phone */
 @media (max-width: 600px) {
+
+        .tajuk-status {
+        width: 95%;
+    }
+
+    .tajuk-status h3 {
+        font-size: 14px;
+    }
+
+    .tajuk-status span {
+        font-size: 10px;
+    }
 
     h1 {
         font-size: 18px;
@@ -92,7 +138,14 @@ th, td {
 <body>
 
 <!-- ========= TABLE PERTAMA ============== -->    
-<h1>Status Inden Kk</h1> 
+<div class="tajuk-status">
+<h1>Status Inden Kk</h1>
+    <div class="kemaskini">
+         <span>Tarikh Kemaskini:</span>
+        <span class="tarikh">04/06/2026</span>
+    </div> 
+</div>    
+
 <table class="table1"> <!-- table pertama -->
     <tr>
         <th>KLINIK</th>
