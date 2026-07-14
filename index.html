@@ -139,6 +139,26 @@ th, td {
     background-color: #64ccf2; /* biru asal */
 }
 
+.berkelip {
+    color: red;
+    font-weight: bold;
+    animation: berkelip 1s infinite;
+}
+
+@keyframes berkelip {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}    
+
 
 </style>    
 <body>
@@ -279,7 +299,7 @@ th, td {
         <td>384</td>
         <td>6856</td>
         <td>2</td>
-        <td>13/5/26</td>
+        <td class="berkelip">13/5/26</td>
         <td>drug</td>    
      </tr>
 
