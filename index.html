@@ -161,14 +161,20 @@ th, td {
 
 /* ================= NEWS TICKER ================= */
 
+
 .logo-ufl {
     width: 30px;
     height: 30px;
     object-fit: contain;
-    flex-shrink: 0;
-    margin-left: 5px;
-    margin-right: 8px;
-}    
+
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 10000;
+}
+   
 
 .news-ticker {
     position: fixed;
@@ -407,6 +413,7 @@ th, td {
 
     
 </table>
+    
 <img src="images/logoticker.png"
              alt="Logo UFL"
              class="logo-ufl">
