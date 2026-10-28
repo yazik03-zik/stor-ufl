@@ -171,6 +171,8 @@ th, td {
 }    
 
 .news-ticker {
+    box-sizing: border-box;
+    
     position: fixed;
     bottom: 0;
     left: 0;
@@ -186,6 +188,9 @@ th, td {
 }
 
 .news-ticker-text {
+    max-width: calc(100vw - 55px);
+    overflow: hidden;
+        
     white-space: nowrap;
     display: inline-block;
     padding-left: 100%;
